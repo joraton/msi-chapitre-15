@@ -64,20 +64,20 @@ export default function CoursePlan() {
   return (
     <div className="max-w-4xl mx-auto">
       {/* Section Header */}
-      <div className="text-center mb-8">
-        <div className="flex items-center justify-center gap-3 mb-4">
-          <Target className="h-8 w-8 text-blue-600" />
-          <h2 className="text-3xl font-bold text-gray-900">
+      <div className="text-center mb-6 md:mb-8">
+        <div className="flex items-center justify-center gap-2 md:gap-3 mb-3 md:mb-4">
+          <Target className="h-6 w-6 md:h-8 md:w-8 text-blue-600" />
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
             Plan du cours
           </h2>
         </div>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-base md:text-lg px-4">
           Suivez le parcours structuré pour maîtriser la performance informatique
         </p>
       </div>
 
       {/* Sections Grid */}
-      <div className="space-y-4">
+      <div className="space-y-3 md:space-y-4">
         {sections.map((section, index) => (
           <SectionBlock
             key={section.href}
